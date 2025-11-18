@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hollow Knight — Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <div class="icon"><img id="smallIcon" src="https://i.etsystatic.com/27531321/r/il/61ee3b/4704590973/il_fullxfull.4704590973_sz01.jpg" alt="HR logo"></div>
+            <div>
+                <div class="site-title">Hollow Knight — Showcase</div>
+                <div class="subtitle">A mini site presentation for class</div>
+            </div>
+        </div>
+        <nav>
+            <a href="#about">Rólunk</a>
+            <a href="#chars">Szereplők</a>
+            <a href="#gallery">Galéria</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-card card-hover" id="about">
+                <h1>Hollow Knight</h1>
+                <div class="meta">
+                    Fejlesztő: <a href="https://www.teamcherry.com.au/">Team Cherry</a>  • Műfaj: Metroidvania • Megjelenés: 2017
+                </div>
+                <p>Hollow Knight egy hangulatos, kihívásokkal teli 2D Metroidvania játék, amely mély felfedezést,
+                    titkokat és szerethető képi világot kínál. Ez az oldal bemutatja a játék világát, főbb szereplőit és
+                    vizuális elemeit.</p>
+                <a class="cta" href="#trailer">Nézd meg a trailert</a>
+
+                <div class="info-grid" aria-hidden="false">
+                    <div class="info">
+                        <h4>Főbb jellemzők</h4>
+                        <ul>
+                            <li>Felfedezés és visszajárás</li>
+                            <li>Kihívást jelentő harcok</li>
+                            <li>Gazdag lore és mellékküldetések</li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <h4>Platformok</h4>
+                        <p>PC, Nintendo Switch, PS4, Xbox One</p>
+                    </div>
+                    <div class="info">
+                        <h4>Tipp</h4>
+                        <p>Figyelj a környezetre — a felfedezés gyakran jutalommal jár.</p>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="hero-card card-hover">
+                <div class="quick">Gyors infók</div>
+                <div class="muted">
+                    Nehézség: közepes-nehéz<br>
+                    Stílus: kézi rajzolt látvány<br>
+                    Hangulat: melankolikus, misztikus
+                </div>
+                <hr />
+                <div>
+                    <strong>Angolul bemutatjuk:</strong>
+                    <p class="muted">Bevezetés, alapinformációk és a trailer megnézése.</p>
+                    <strong>Magyarul bemutatjuk:</strong>
+                    <p class="muted">Az oldal felépítése és bemutatása.</p>
+                    <p class="muted">A játékról való információk.</p>
+                    <p class="muted">A kód összetétele.</p>
+                </div>
+            </aside>
+        </section>
+
+        <section id="trailer" class="section">
+            <h2>Trailer</h2>
+            <div class="trailer hero-card card-hover">
+                <iframe width="100%" height="360" src="https://www.youtube.com/embed/UAO2urG23S4"
+                    title="Hollow Knight Trailer" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="chars" class="section">
+            <h2>Főbb szereplők</h2>
+            <div class="characters">
+                <div class="char card-hover">
+                    <h3>The Knight</h3>
+                    <p class="muted">A csendes főhős, felfedező spirit, akinek útja a történet középpontja.</p>
+                </div>
+                <div class="char card-hover">
+                    <h3>Hornet</h3>
+                    <p class="muted">Titokzatos harcos, akivel többször is találkozik a játékos. Néha ellenság néha barát.</p>
+                </div>
+                <div class="char card-hover">
+                    <h3>Quirrel</h3>
+                    <p class="muted">Barátságos harcos, aki információkat oszt meg a világról.</p>
+                </div>
+            </div>
+
+            <div class="gallery" id="gallery">
+                <img alt="Hollow Knight scene 1"
+                    src="https://cdn.wikimg.net/en/hkwiki/images/thumb/b/b1/HK_Welcome_Image.png/500px-HK_Welcome_Image.png">
+                <img alt="Hollow Knight scene 2"
+                    src="https://gaming-cdn.com/images/news/articles/14421/cover/1000x563/the-seven-years-of-development-for-hollow-knight-silksong-went-well-cover68a742e85d00d.jpg">
+                <img alt="Hollow Knight scene 3"
+                    src="https://theanalyticalgeek.com/wp-content/uploads/2024/06/Quirrel-Main.webp">
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Interaktív rész</h2>
+            <div class="hero-card card-hover quiz-wrap">
+                <p class="muted">Használj egy rövid trivia kvízt, hogy felmérjük a csoport tudását.</p>
+                <div id="quiz"></div>
+                <div id="progress" class="progress">
+                    <div id="bar"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <a id="gpt" href="https://chatgpt.com/">Készítette</a>: Varga Tibor, Pocsai Tamás, Pásztor Máté • Projekt: Hollow Knight bemutató •
+    </footer>
+
+
+</body>
+
+</html>

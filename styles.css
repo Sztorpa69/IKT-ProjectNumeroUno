@@ -1,0 +1,276 @@
+:root {
+    --bg: #0b1020;
+    --card: #0f1724;
+    --accent: #7dd3fc;
+    --muted: #9ca3af;
+    --glass: rgba(255, 255, 255, 0.03);
+    --radius: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+* {
+    box-sizing: border-box
+}
+
+a{
+    transition: 0.2s ease;
+}
+
+a:hover {
+    color: rgba(2, 6, 23, 0.658)
+}
+
+a:visited {
+    color: inherit 
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(180deg, var(--bg), #05060a);
+    color: #e6eef8;
+    line-height: 1.5
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 20px 28px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.02), transparent);
+    backdrop-filter: blur(6px)
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px
+}
+
+
+.icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: radial-gradient(circle at 30% 25%, #111827, #08101a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700
+}
+
+#smallIcon,
+.icon img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.site-title {
+    font-size: 18px;
+    font-weight: 700
+}
+
+.subtitle {
+    font-size: 12px;
+    color: var(--muted)
+}
+
+nav {
+    margin-left: auto
+}
+
+nav a {
+    color: var(--muted);
+    text-decoration: none;
+    margin-left: 18px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 28px auto;
+    padding: 0 20px
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 22px;
+    align-items: start
+}
+
+.hero-card {
+    background: linear-gradient(180deg, var(--card), rgba(255, 255, 255, 0.02));
+    padding: 22px;
+    border-radius: var(--radius);
+    box-shadow: 0 6px 20px rgba(2, 6, 23, 0.6)
+}
+
+.hero h1 {
+    margin: 0 0 10px;
+    font-size: 34px
+}
+
+.meta {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 12px
+}
+
+.cta {
+    display: inline-block;
+    padding: 10px 14px;
+    border-radius: 10px;
+    background: var(--accent);
+    color: #021028;
+    font-weight: 700;
+    text-decoration: none
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-top: 18px
+}
+
+.info {
+    background: var(--glass);
+    padding: 12px;
+    border-radius: 12px
+}
+
+.info h4 {
+    margin: 0 0 6px
+}
+
+.trailer {
+    background: #000;
+    border-radius: 12px;
+    overflow: hidden
+}
+
+.characters {
+    display: flex;
+    gap: 12px;
+    overflow: auto;
+    padding: 8px 0
+}
+
+.char {
+    min-width: 160px;
+    background: linear-gradient(180deg, #071127, transparent);
+    padding: 10px;
+    border-radius: 12px
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 16px
+}
+
+.gallery img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 14px;
+    margin-top: 30px
+}
+
+.muted {
+    color: var(--muted)
+}
+
+.section {
+    margin-top: 20px
+}
+
+.quick {
+    margin-bottom: 12px;
+    font-weight: 700
+}
+
+.quiz-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.progress {
+    height: 10px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 10px;
+    overflow: hidden
+}
+
+#bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--accent), #60a5fa)
+}
+
+.card-hover {
+    transition: transform .18s ease, box-shadow .18s
+}
+
+.card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6)
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#gpt a, a:hover, a:visited {
+    text-decoration-line: none;
+    text-decoration: none;
+    color: inherit;
+
+}
+
+@media (max-width:900px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+@media (max-width:560px) {
+    nav {
+        display: none
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr
+    }
+
+    .gallery {
+        grid-template-columns: 1fr
+    }
+
+    .characters {
+        gap: 8px
+    }
+
+    .char {
+        min-width: 120px
+    }
+}
